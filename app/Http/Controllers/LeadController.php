@@ -120,7 +120,7 @@ class LeadController extends Controller
         $user = auth()->user();
         $file = LeadModel::where('id', $id)->first();
 
-        $filePath = storage_path("public/users/{$user->id}/exports/{$file->file_name}");
+        $filePath = storage_path("app/public/users/{$user->id}/exports/{$file->file_name}");
 
         $spreadsheet = IOFactory::load($filePath);
 
