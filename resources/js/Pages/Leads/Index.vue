@@ -24,7 +24,7 @@ export default {
             Seus Leads
         </h2>
         <div class="lg:px-8 flex flex-col gap-5 justify-center items-center">
-            <div class="mt-10 grid grid-cols-4 gap-4">
+            <div class="mt-10 grid sm:grid-cols-4 gap-4">
                 <div
                     v-for="file in files"
                     class="flex items-center gap-5 relative px-4 py-6 bg-gray-200 shadow-lg sm:rounded-3xl bg-clip-padding bg-opacity-30 border border-gray-200"

@@ -14,6 +14,7 @@ export default {
             resultVisible: false,
             loading: false,
             downloadUrl: "",
+            progress: 0,
         };
     },
     components: {
@@ -26,13 +27,21 @@ export default {
         onSubmit() {
             this.resultVisible = true;
             this.loading = true;
+            this.progress = 0;
 
-            this.form.post("/leads/store").then((response) => {
-                this.loading = false;
-                this.downloadUrl = URL.createObjectURL(
-                    new Blob([response.data])
-                );
-            });
+            this.form
+                .post("/leads/store")
+                .onUpdateProgress((event) => {
+                    this.progress = Math.round(
+                        (event.loaded * 100) / event.total
+                    );
+                })
+                .then((response) => {
+                    this.loading = false;
+                    this.downloadUrl = URL.createObjectURL(
+                        new Blob([response.data])
+                    );
+                });
         },
     },
 };
@@ -137,13 +146,16 @@ export default {
             >
                 <div
                     id="loading"
-                    class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
-                    role="status"
+                    class="h-4 w-full bg-gray-300"
+                    role="progressbar"
+                    :aria-valuenow="progress"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
                 >
-                    <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                        >Loading...</span
-                    >
+                    <div
+                        class="h-full bg-blue-500"
+                        :style="{ width: `${progress}%` }"
+                    ></div>
                 </div>
             </div>
         </div>

@@ -30,9 +30,14 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/register', function () {
-        return Inertia::render('Auth/Register');
-    });
+    Route::get('/register', [function () {
+        return Inertia::render('Auth/Register', [
+            'canLogin' => Route::has('login'),
+            'canRegister' => Route::has('register'),
+            'laravelVersion' => Application::VERSION,
+            'phpVersion' => PHP_VERSION,
+        ]);
+    }]);
     Route::post('/register', [UserController::class, 'store'])->name('register_user');
     Route::get('/leads', [LeadController::class, 'index'])->name('leads.index');
     Route::get('/leads/create', [LeadController::class, 'create'])->name('leads.create');
