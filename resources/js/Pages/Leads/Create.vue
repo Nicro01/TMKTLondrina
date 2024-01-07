@@ -21,9 +21,6 @@ export default {
         Navbar,
     },
     methods: {
-        onRangeInput(event) {
-            this.rangeValue = event.target.value;
-        },
         onSubmit() {
             this.resultVisible = true;
             this.loading = true;
@@ -52,7 +49,7 @@ export default {
         <Navbar />
         <div class="lg:px-8 flex flex-col gap-5 justify-center items-center">
             <div
-                class="block w-5/12 mt-20 rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+                class="block sm:w-5/12 mt-20 rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
             >
                 <form
                     @submit.prevent="onSubmit"
@@ -108,9 +105,9 @@ export default {
                     </div>
 
                     <div class="relative">
-                        <span class="absolute top-0 right-0" id="range-value"
-                            >2500</span
-                        >
+                        <span class="absolute top-0 right-0" id="range-value">{{
+                            form.rangeValue
+                        }}</span>
                         <label
                             for="customRange1"
                             class="mb-2 inline-block text-neutral-700 dark:text-neutral-200"
