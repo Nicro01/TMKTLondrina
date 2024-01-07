@@ -39,7 +39,7 @@ export default {
                 Nossos Serviços
             </h2>
 
-            <div class="grid grid-cols-3">
+            <div class="grid sm:grid-cols-3 gap-10 sm:gap-0">
                 <div
                     class="max-w-sm mx-auto bg-white shadow-lg grow rounded-lg overflow-hidden"
                 >

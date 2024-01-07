@@ -4,12 +4,12 @@
         id="sobre-nos"
     >
         <h2
-            class="text-3xl text-center font-extrabold text-[#213557] sm:text-4xl mb-10"
+            class="text-3xl text-center font-extrabold text-[#213557] sm:text-4xl sm:mb-10"
         >
             Nossos Valores
         </h2>
         <div
-            class="grid grid-cols-5 max-w-7xl h-[500px] max-h-[500px] min-h-[500px] mx-auto px-4 sm:px-6 lg:px-8 gap-10 pt-12 items-center justify-center"
+            class="grid sm:grid-cols-5 max-w-7xl h-[500px] max-h-[500px] min-h-[500px] mx-auto px-4 sm:px-6 lg:px-8 gap-10 sm:pt-12 items-center justify-center"
         >
             <div
                 class="col-span-3"
@@ -17,17 +17,19 @@
                 v-show="valores.indexOf(valor) == currentSlide"
             >
                 <h2
-                    class="text-2xl font-extrabold text-[#213557] sm:text-4xl mb-3"
+                    class="text-xl font-extrabold text-[#213557] sm:text-4xl mb-3 text-center sm:text-start"
                 >
                     {{ valor.title }}
                 </h2>
-                <p class="mt-4 text-lg leading-6 text-gray-500">
+                <p
+                    class="mt-4 sm:text-lg text-base leading-6 text-gray-500 text-center sm:text-start"
+                >
                     {{ valor.description }}
                 </p>
             </div>
             <div
                 id="ourValues"
-                class="relative col-span-2"
+                class="relative sm:col-span-2 col-span-3"
                 data-te-carousel-init
                 data-te-ride="carousel"
                 data-te-interval="false"
@@ -42,7 +44,7 @@
                         data-te-target="#ourValues"
                         data-te-slide-to="0"
                         data-te-carousel-active
-                        class="box-content h-[70px] w-[100px] flex-initial shadow-3-strong shadow-[#365A80] rounded bg-cover cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        class="box-content sm:h-[70px] h-[50px] sm:w-[100px] w-[50px] flex-initial shadow-3-strong shadow-[#365A80] rounded bg-cover cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                         aria-current="true"
                         aria-label="Slide 1"
                         :style="{
@@ -54,7 +56,7 @@
                         type="button"
                         data-te-target="#ourValues"
                         data-te-slide-to="1"
-                        class="box-content h-[70px] w-[100px] shadow-3-strong shadow-[#365A80] rounded bg-cover flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        class="box-content sm:h-[70px] h-[50px] sm:w-[100px] w-[50px] shadow-3-strong shadow-[#365A80] rounded bg-cover flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                         aria-label="Slide 2"
                         :style="{
                             backgroundImage: 'url(' + slideImages[1] + ')',
@@ -65,7 +67,7 @@
                         type="button"
                         data-te-target="#ourValues"
                         data-te-slide-to="2"
-                        class="box-content h-[70px] w-[100px] flex-initial shadow-3-strong shadow-[#365A80] rounded bg-cover cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        class="box-content sm:h-[70px] h-[50px] sm:w-[100px] w-[50px] flex-initial shadow-3-strong shadow-[#365A80] rounded bg-cover cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                         aria-label="Slide 3"
                         :style="{
                             backgroundImage: 'url(' + slideImages[2] + ')',
@@ -76,7 +78,7 @@
                         type="button"
                         data-te-target="#ourValues"
                         data-te-slide-to="3"
-                        class="box-content h-[70px] w-[100px] flex-initial shadow-3-strong shadow-[#365A80] rounded bg-cover cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        class="box-content sm:h-[70px] h-[50px] sm:w-[100px] w-[50px] flex-initial shadow-3-strong shadow-[#365A80] rounded bg-cover cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                         aria-label="Slide 4"
                         :style="{
                             backgroundImage: 'url(' + slideImages[3] + ')',

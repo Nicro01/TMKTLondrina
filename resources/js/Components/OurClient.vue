@@ -1,12 +1,12 @@
 <template>
-    <div class="container py-12 my-12 bg-transparent">
+    <div class="container py-12 my-12 mx-auto bg-transparent">
         <section class="text-center">
-            <h2 class="mb-16 text-3xl font-bold text-[#213557]">
+            <h2 class="mb-16 text-2xl font-bold text-[#213557]">
                 Conheça nossos clientes
             </h2>
 
             <div
-                class="grid px-6 md:grid-cols-2 lg:grid-cols-4 items-center justify-center grayscale-[80%]"
+                class="grid px-6 grid-cols-2 lg:grid-cols-4 items-center justify-center grayscale-[80%]"
             >
                 <div class="mx-auto mb-12 lg:mb-0">
                     <a href="https://www.instagram.com/carasbrasil/"

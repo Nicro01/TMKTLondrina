@@ -45,27 +45,34 @@ body {
 <template>
     <Head title="Welcome" />
 
-    <Navbar />
-
     <section class="bg-gradient-to-b from-[#0D2235] to-[#365A80] select-none">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-10 pt-32">
+        <Navbar />
+        <div
+            class="sm:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:flex sm:flex-row flex-col gap-10 sm:pt-32 pt-14"
+        >
             <div class="max-w-3xl mx-auto flex flex-col gap-10">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <h2
+                    class="text-2xl font-extrabold text-white sm:text-4xl text-center sm:text-start"
+                >
                     <span class="block">TMKT Londrina</span>
                     <span class="block">Soluções em Telemarketing</span>
                 </h2>
-                <p class="mt-4 text-lg leading-6 text-white">
+                <p
+                    class="sm:mt-4 sm:text-lg text-sm leading-6 text-white text-center sm:text-start"
+                >
                     Desde 2004, a TMKT LONDRINA oferece soluções de
                     telemarketing ativo para grandes empresas do setor editorial
                     de revistas e plataformas digitais
                 </p>
                 <button
-                    class="border rounded-full py-3 text-white font-extralight max-w-[35%] hover:bg-white hover:text-[#213557] transition duration-300 ease-in-out"
+                    class="border sm:self-start self-center rounded-full sm:py-3 py-1 text-white font-extralight sm:max-w-[35%] w-[50%] hover:bg-white hover:text-[#213557] transition duration-300 ease-in-out"
                     data-te-ripple-init
                 >
                     Fale Conosco!
                 </button>
-                <div class="flex gap-4">
+                <div
+                    class="flex gap-4 justify-center mb-10 sm:mb-0 sm:justify-start"
+                >
                     <button
                         type="button"
                         data-te-ripple-init
@@ -128,9 +135,9 @@ body {
         <Waves />
     </section>
 
-    <section class="pt-24 pb-12 select-none bg-[#f6f8f9]" id="sobre-nos">
+    <section class="sm:pt-24 pb-12 select-none bg-[#f6f8f9]" id="sobre-nos">
         <div
-            class="flex max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-10 pt-12 items-center"
+            class="flex flex-col sm:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:gap-10 pt-12 sm:items-center items-start"
         >
             <img
                 src="../../img/Vetores/Atendente.svg"
@@ -140,11 +147,13 @@ body {
             />
             <div class="flex flex-col">
                 <h2
-                    class="text-3xl font-extrabold text-[#213557] sm:text-4xl mb-3"
+                    class="text-3xl font-extrabold text-[#213557] sm:text-4xl mb-3 text-center sm:text-start"
                 >
                     O que é a TMKT Londrina?
                 </h2>
-                <p class="mt-4 text-lg leading-6 text-gray-500">
+                <p
+                    class="sm:mt-4 sm:text-lg text-base leading-6 text-gray-500 text-center sm:text-start"
+                >
                     A TMKT Londrina é uma empresa que atua no ramo de
                     telemarketing ativo, oferecendo soluções para grandes
                     empresas do setor editorial de revistas e plataformas
@@ -171,13 +180,15 @@ body {
         <hr
             class="mb-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"
         />
-        <div class="mx-80">
+        <div class="sm:mx-80">
             <h2
                 class="text-3xl text-center font-extrabold text-[#213557] sm:text-4xl mb-3"
             >
                 Nossa Essência
             </h2>
-            <p class="mt-8 text-lg text-center leading-6 text-gray-500">
+            <p
+                class="mt-8 sm:text-lg text-base text-center leading-6 text-gray-500"
+            >
                 Com experiência em treinamento e desenvolvimento na área
                 comercial, sua fundadora Rosilene Estevam, já atuava nos Estados
                 do Paraná, Santa Catarina e interior de São Paulo, destacando-se
@@ -185,7 +196,7 @@ body {
                 melhores práticas em atendimento
             </p>
         </div>
-        <div class="grid-cols-1 sm:grid md:grid-cols-3 mx-32">
+        <div class="grid-cols-1 sm:grid md:grid-cols-3 sm:mx-32 mx-10">
             <div
                 class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0"
             >
