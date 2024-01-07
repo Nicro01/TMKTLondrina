@@ -42,7 +42,6 @@ export default {
                 class="mx-[3px] box-content h-[30px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                 aria-current="true"
                 aria-label="Slide 1"
-                :style="{ backgroundImage: 'url(' + slideImages[0] + ')' }"
             ></button>
             <button
                 type="button"
@@ -50,7 +49,6 @@ export default {
                 data-te-slide-to="1"
                 class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                 aria-label="Slide 2"
-                :style="{ backgroundImage: 'url(' + slideImages[1] + ')' }"
             ></button>
             <button
                 type="button"
@@ -58,7 +56,6 @@ export default {
                 data-te-slide-to="2"
                 class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                 aria-label="Slide 3"
-                :style="{ backgroundImage: 'url(' + slideImages[2] + ')' }"
             ></button>
         </div>
 
@@ -78,15 +75,6 @@ export default {
                     class="block w-full"
                     alt="..."
                 />
-                <div
-                    class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                >
-                    <h5 class="text-xl">First slide label</h5>
-                    <p>
-                        Some representative placeholder content for the first
-                        slide.
-                    </p>
-                </div>
             </div>
             <!--Second item-->
             <div
@@ -99,15 +87,6 @@ export default {
                     class="block w-full"
                     alt="..."
                 />
-                <div
-                    class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                >
-                    <h5 class="text-xl">Second slide label</h5>
-                    <p>
-                        Some representative placeholder content for the second
-                        slide.
-                    </p>
-                </div>
             </div>
             <!--Third item-->
             <div
@@ -120,15 +99,6 @@ export default {
                     class="block w-full"
                     alt="..."
                 />
-                <div
-                    class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                >
-                    <h5 class="text-xl">Third slide label</h5>
-                    <p>
-                        Some representative placeholder content for the third
-                        slide.
-                    </p>
-                </div>
             </div>
         </div>
 

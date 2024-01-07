@@ -101,15 +101,6 @@
                             class="block w-full max-w-3xl"
                             alt="..."
                         />
-                        <div
-                            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                            <h5 class="text-xl">First slide label</h5>
-                            <p>
-                                Some representative placeholder content for the
-                                first slide.
-                            </p>
-                        </div>
                     </div>
                     <!--Second item-->
                     <div
@@ -122,15 +113,6 @@
                             class="block w-full max-w-3xl"
                             alt="..."
                         />
-                        <div
-                            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                            <h5 class="text-xl">Second slide label</h5>
-                            <p>
-                                Some representative placeholder content for the
-                                second slide.
-                            </p>
-                        </div>
                     </div>
                     <!--Third item-->
                     <div
@@ -143,15 +125,6 @@
                             class="block w-full max-w-3xl"
                             alt="..."
                         />
-                        <div
-                            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                            <h5 class="text-xl">Third slide label</h5>
-                            <p>
-                                Some representative placeholder content for the
-                                third slide.
-                            </p>
-                        </div>
                     </div>
                     <div
                         class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
@@ -163,15 +136,6 @@
                             class="block self-center max-w-sm scale-125"
                             alt="..."
                         />
-                        <div
-                            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                            <h5 class="text-xl">Fourth slide label</h5>
-                            <p>
-                                Some representative placeholder content for the
-                                third slide.
-                            </p>
-                        </div>
                     </div>
                 </div>
 
