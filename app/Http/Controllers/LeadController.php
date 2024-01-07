@@ -113,7 +113,7 @@ class LeadController extends Controller
 
         return response()->json([
             'message' => 'Arquivo gerado com sucesso!',
-            'downloadUrl' => env("APP_URL") + $publicPath,
+            'downloadUrl' => env("APP_URL") . $publicPath,
         ]);
     }
 
