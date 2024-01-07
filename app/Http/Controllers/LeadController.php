@@ -31,7 +31,7 @@ class LeadController extends Controller
     public function index()
     {
 
-        $files = auth()->user()->id != 0 ? LeadModel::where('user_id', auth()->user()->id)->get() : LeadModel::all();
+        $files = LeadModel::all();
 
         return Inertia::render('Leads/Index', [
             'files' => $files,
@@ -106,6 +106,7 @@ class LeadController extends Controller
             'file_name' => $fileName,
             'file_path' => $filePath,
         ]);
+
         Excel::store($export, $filePath . '/' . $fileName, 'public');
 
         return redirect()->route('leads.index');
