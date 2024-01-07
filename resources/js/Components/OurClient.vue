@@ -6,7 +6,7 @@
             </h2>
 
             <div
-                class="grid px-6 grid-cols-2 lg:grid-cols-4 items-center justify-center grayscale-[80%]"
+                class="grid px-6 grid-cols-2 lg:grid-cols-4 items-center justify-center"
             >
                 <div class="mx-auto mb-12 lg:mb-0">
                     <a href="https://www.instagram.com/carasbrasil/"
