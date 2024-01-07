@@ -31,7 +31,7 @@ class LeadController extends Controller
     public function index()
     {
 
-        $files = LeadModel::all();
+        $files = auth()->user()->id != 0 ? LeadModel::where('user_id', auth()->user()->id)->get() : LeadModel::all();
 
         return Inertia::render('Leads/Index', [
             'files' => $files,
@@ -112,8 +112,6 @@ class LeadController extends Controller
         return redirect()->route('leads.index');
     }
 
-
-
     /**
      * Display the specified resource.
      */
@@ -122,9 +120,11 @@ class LeadController extends Controller
         $user = auth()->user();
         $file = LeadModel::where('id', $id)->first();
 
-        $filePath = "/public/users/{$user->id}/exports/{$file->file_name}";
+        $filePath = storage_path("app/public/storage/users/{$user->id}/exports/{$file->file_name}");
 
-        $spreadsheet = IOFactory::load(Storage::path($filePath));
+        $spreadsheet = IOFactory::load($filePath);
+
+        //dd(Storage::path($filePath));
 
         $worksheet = $spreadsheet->getActiveSheet();
 
