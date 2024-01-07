@@ -22,7 +22,7 @@ class LeadController extends Controller
     public function __construct(Client $client)
     {
         $this->client = $client;
-        $this->apiKey = 'AIzaSyCQGZwah06y7My792j7xk4dgERkClYE2Pw';
+        $this->apiKey = env('GOOGLE_API_KEY');
     }
 
     /**
@@ -109,7 +109,12 @@ class LeadController extends Controller
 
         Excel::store($export, $filePath . '/' . $fileName, 'public');
 
-        return redirect()->route('leads.index');
+        $publicPath = Storage::url($filePath . '/' . $fileName);
+
+        return response()->json([
+            'message' => 'Arquivo gerado com sucesso!',
+            'downloadUrl' => env("APP_URL") + $publicPath,
+        ]);
     }
 
     /**
