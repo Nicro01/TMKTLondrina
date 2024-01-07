@@ -9,7 +9,7 @@
             Nossos Valores
         </h2>
         <div
-            class="grid sm:grid-cols-5 max-w-7xl h-[500px] max-h-[500px] min-h-[500px] mx-auto px-4 sm:px-6 lg:px-8 gap-10 sm:pt-12 items-center justify-center"
+            class="grid sm:grid-cols-5 sm:max-w-7xl h-[500px] max-h-[500px] min-h-[500px] mx-auto px-4 sm:px-6 lg:px-8 gap-10 sm:pt-12 items-center justify-center"
         >
             <div
                 class="col-span-3"
@@ -135,7 +135,7 @@
                     >
                         <img
                             :src="slideImages[3]"
-                            class="block self-center max-w-sm scale-125"
+                            class="block w-full max-w-3xl"
                             alt="..."
                         />
                     </div>

@@ -62,12 +62,13 @@
                     </svg>
                 </button>
             </div>
-            <div v-show="isOpen" class="sm:hidden mr-5"></div>
             <ul
                 :class="
-                    isOpen ? 'flex-col h-full justify-start gap-10' : 'hidden'
+                    isOpen
+                        ? 'flex-col h-full justify-start gap-10'
+                        : 'hidden sm:flex'
                 "
-                class="right hide-on-med-and-down flex gap-6"
+                class="right flex gap-6"
             >
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="#sobre-nos">Sobre Nós</Link></li>
