@@ -26,7 +26,6 @@ const submit = () => {
     })).post(route("login"), {
         onFinish: () => {
             form.reset("password");
-            route("leads.index");
         },
     });
 };
@@ -93,7 +92,7 @@ const submit = () => {
                     :href="route('password.request')"
                     class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                    Forgot your password?
+                    Esqueceu a senha?
                 </Link>
 
                 <PrimaryButton
@@ -101,7 +100,7 @@ const submit = () => {
                     :class="{ 'opacity-25': form.processing }"
                     :disabled="form.processing"
                 >
-                    Log in
+                    Entrar
                 </PrimaryButton>
             </div>
         </form>

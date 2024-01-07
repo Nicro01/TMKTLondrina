@@ -75,9 +75,9 @@
                 <li><Link href="#contato">Contato</Link></li>
                 <li>
                     <Link
-                        href="/leads"
+                        href="/login"
                         class="button bg-gradient-to-r from-[#213557] to-[#336090] py-2 px-4 rounded-3xl text-white"
-                        >Dashboard</Link
+                        >Login</Link
                     >
                 </li>
             </ul>
