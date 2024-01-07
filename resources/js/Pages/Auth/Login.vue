@@ -23,11 +23,11 @@ const submit = () => {
     form.transform((data) => ({
         ...data,
         remember: form.remember ? "on" : "",
-    })).post(route("login"), {
-        onFinish: () => {
-            form.reset("password");
-        },
-    });
+    }))
+        .post(route("login"))
+        .then(() => {
+            window.location = route("leads.index");
+        });
 };
 </script>
 
