@@ -1,13 +1,23 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+import forms from "@tailwindcss/forms";
+import typography from "@tailwindcss/typography";
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
     content: [
-        "./index.html",
-        "./src/**/*.{vue,js,ts,jsx,tsx}",
+        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
+        "./vendor/laravel/jetstream/**/*.blade.php",
+        "./storage/framework/views/*.php",
+        "./resources/views/**/*.blade.php",
+        "./resources/js/**/*.vue",
         "./node_modules/tw-elements/dist/js/**/*.js",
     ],
+
+    safelist: ["animate-[browse-in_0.5s]"],
+
     theme: {
         extend: {},
     },
-    darkMode: "class",
-    plugins: [require("tw-elements/dist/plugin.cjs")],
+
+    plugins: [forms, typography, require("tw-elements/dist/plugin.cjs")],
 };

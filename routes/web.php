@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LeadController;
+use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -18,7 +20,6 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
@@ -29,7 +30,12 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
+    Route::get('/register', function () {
+        return Inertia::render('Auth/Register');
+    });
+    Route::post('/register', [UserController::class, 'store'])->name('register_user');
+    Route::get('/leads', [LeadController::class, 'index'])->name('leads.index');
+    Route::get('/leads/create', [LeadController::class, 'create'])->name('leads.create');
+    Route::post('/leads/store', [LeadController::class, 'store'])->name('leads.store');
+    Route::get('/leads/{id}', [LeadController::class, 'show'])->name('leads.show');
 });

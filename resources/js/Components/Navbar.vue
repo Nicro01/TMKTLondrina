@@ -10,7 +10,7 @@ defineProps({
 </script>
 <template>
     <nav
-        class="w-full bg-white text-gray-900 sm:text-md py-6 shadow-2xl shadow-black"
+        class="w-full bg-white text-gray-900 sm:text-md py-6 shadow-lg shadow-slate-400"
     >
         <div class="nav-wrapper flex justify-between mx-10 items-center">
             <a href="#" class="brand-logo flex items-center gap-5">
@@ -31,7 +31,7 @@ defineProps({
 
                 <li>
                     <Link
-                        href="/dashboard"
+                        href="/leads"
                         class="button bg-gradient-to-r from-[#213557] to-[#336090] py-2 px-4 rounded-3xl text-white"
                         >Dashboard</Link
                     >
