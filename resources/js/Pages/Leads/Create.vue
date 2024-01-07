@@ -148,6 +148,7 @@ export default {
                 </div>
             </div>
             <div
+                v-show="completed"
                 id="result"
                 class="flex flex-col justify-center sm:w-5/12 my-10 rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
             >
