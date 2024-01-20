@@ -71,8 +71,10 @@
                 class="right flex gap-6"
             >
                 <li><Link href="/">Home</Link></li>
-                <li><Link href="#sobre-nos">Sobre Nós</Link></li>
-                <li><Link href="#contato">Contato</Link></li>
+                <li>
+                    <Link :href="route('home') + `/#sobre-nos`">Sobre Nós</Link>
+                </li>
+                <li><Link :href="route('contato')">Contato</Link></li>
                 <li>
                     <Link
                         href="/login"

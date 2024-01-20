@@ -23,7 +23,12 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('home');
+
+Route::get('/contato', function () {
+    return Inertia::render('Contact');
+})->name('contato');
+
 
 Route::middleware([
     'auth:sanctum',
