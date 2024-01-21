@@ -2,8 +2,23 @@
 import Navbar from "@/Components/Navbar.vue";
 import Footer from "@/Components/Footer.vue";
 import { initTE, Ripple, Input } from "tw-elements";
+import { useForm } from "@inertiajs/vue3";
 
 export default {
+    props: {
+        success: Boolean,
+    },
+    data() {
+        return {
+            url: route("contato.store"),
+            form: new useForm({
+                name: "",
+                email: "",
+                message: "",
+            }),
+            phone: window.innerWidth < 768 ? true : false,
+        };
+    },
     components: {
         Navbar,
         initTE,
@@ -13,6 +28,19 @@ export default {
     },
     mounted() {
         initTE({ Ripple, Input });
+    },
+    methods: {
+        onSubmit() {
+            this.form
+                .post(this.url)
+                .then((response) => {
+                    console.log(response);
+                    this.success = true;
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        },
     },
 };
 </script>
@@ -34,13 +62,47 @@ export default {
                         <div
                             class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6"
                         >
-                            <form>
+                            <div class="max-w-md mb-10" v-if="!success">
+                                <h2
+                                    class="mb-4 text-2xl md:text-3xl font-bold text-gray-900 text-center md:text-start"
+                                >
+                                    Entre em contato
+                                </h2>
+                                <p
+                                    class="mb-4 text-gray-700 text-center md:text-start"
+                                >
+                                    Preencha o formulário abaixo para entrar em
+                                    contato conosco.
+                                </p>
+                            </div>
+                            <div
+                                class="max-w-md mx-auto text-center"
+                                v-if="success"
+                            >
+                                <h2
+                                    class="mb-4 text-2xl md:text-3xl font-bold text-gray-900"
+                                >
+                                    Obrigado por entrar em contato!
+                                </h2>
+                                <p class="mb-4 text-gray-700">
+                                    Em breve retornaremos sua mensagem.
+                                </p>
+                                <a
+                                    href="/"
+                                    class="inline-block px-10 py-3 mt-6 text-sm font-medium leading-6 text-center text-white uppercase transition bg-gray-900 rounded shadow ripple hover:shadow-lg hover:bg-gray-800 focus:outline-none"
+                                >
+                                    Voltar para a página inicial
+                                </a>
+                            </div>
+                            <form @submit.prevent="onSubmit()" v-if="!success">
                                 <div
                                     class="relative mb-6"
                                     data-te-input-wrapper-init
                                 >
                                     <input
                                         type="text"
+                                        v-model="form.name"
+                                        required
                                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                         id="exampleInput90"
                                         placeholder="Nome"
@@ -57,6 +119,8 @@ export default {
                                 >
                                     <input
                                         type="email"
+                                        v-model="form.email"
+                                        required
                                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                         id="exampleInput91"
                                         placeholder="Seu melhor e-mail"
@@ -74,6 +138,8 @@ export default {
                                     <textarea
                                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                         id="exampleFormControlTextarea1"
+                                        v-model="form.message"
+                                        required
                                         rows="3"
                                         placeholder="Mensagem"
                                     ></textarea>
@@ -101,7 +167,7 @@ export default {
                                     </label>
                                 </div>
                                 <button
-                                    type="button"
+                                    type="submit"
                                     data-te-ripple-init
                                     data-te-ripple-color="light"
                                     class="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] lg:mb-0"
@@ -112,6 +178,7 @@ export default {
                         </div>
                         <div
                             class="w-full h-[60vh] shrink-0 grow-0 basis-auto lg:w-7/12"
+                            v-if="!phone"
                         >
                             <div
                                 class="w-full h-full bg-fit bg-[50%] bg-no-repeat bg-[url('../../img/Circles.png')]"

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Application;
@@ -49,3 +50,5 @@ Route::middleware([
     Route::post('/leads/store', [LeadController::class, 'store'])->name('leads.store');
     Route::get('/leads/{id}', [LeadController::class, 'show'])->name('leads.show');
 });
+
+Route::post('/contato', [ContactController::class, 'store'])->name('contato.store');
