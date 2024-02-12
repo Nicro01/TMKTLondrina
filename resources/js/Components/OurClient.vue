@@ -2,11 +2,11 @@
     <div class="container mt-12 mx-auto bg-transparent">
         <section class="text-center">
             <div
-                class="relative flex py-5 mb-16 mx-[20%] items-center text-4xl select-none"
+                class="relative flex py-5 md:mb-16 md:mx-[20%] items-center text-4xl select-none"
             >
                 <div class="flex-grow border-t border-gray-600"></div>
                 <span
-                    class="flex-shrink mx-4 text-3xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
+                    class="flex-shrink mx-4 text-2xl font-extrabold text-[#213557] md:text-4xl text-center sm:text-start"
                     >Conheça nossos clientes</span
                 >
                 <div class="flex-grow border-t border-gray-600"></div>

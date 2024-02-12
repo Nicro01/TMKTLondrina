@@ -1,38 +1,39 @@
 <template>
-    <div class="container my-24 mx-auto">
+    <div class="container mx-auto">
         <div
-            class="relative flex py-5 mb-16 mx-[20%] items-center text-4xl select-none"
+            class="relative flex py-5 mb-16 md:mx-[20%] items-center text-4xl select-none"
         >
             <div class="flex-grow border-t border-gray-600"></div>
             <span
-                class="flex-shrink mx-4 text-3xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
+                class="flex-shrink mx-4 text-2xl font-extrabold text-[#213557] md:text-4xl text-center sm:text-start"
                 >Nossa Essência</span
             >
             <div class="flex-grow border-t border-gray-600"></div>
         </div>
 
         <!-- Section: Design Block -->
-        <section class="mb-32">
+        <section class="mb-12 md:mb-32">
             <div class="flex flex-wrap">
                 <div
-                    class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 relative z-10 left-60"
+                    v-show="window.innerWidth > 1024"
+                    class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 relative z-10 md:left-60"
                 >
                     <div class="flex lg:py-12">
                         <img
                             draggable="false"
                             src="https://picsum.photos/1000/1000"
-                            class="w-7/12 rounded-lg shadow-lg lg:ml-16 z-[10]"
+                            class="md:w-7/12 rounded-lg shadow-lg lg:ml-16 z-[10]"
                             alt="image"
                         />
                     </div>
                 </div>
                 <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
                     <div
-                        class="flex min-h-[480px] items-center rounded-s-lg bg-[#365a80] p-6 text-center text-gray-300 lg:pl-12 lg:text-left"
+                        class="flex min-h-[480px] items-center rounded-lg md:rounded-s-lg bg-[#365a80] p-6 md:text-center text-gray-300 lg:pl-12 lg:text-left"
                     >
                         <div class="lg:pl-12">
                             <div
-                                class="relative mb-5 flex py-5 items-center select-none text-4xl"
+                                class="relative mb-5 flex py-5 items-center select-none text-2xl md:text-4xl"
                             >
                                 <div class="flex-grow border-t"></div>
                                 <span class="flex-shrink mx-4">Missão</span>
@@ -67,15 +68,15 @@
                 </div>
             </div>
         </section>
-        <section class="mb-32">
+        <section class="md:mb-32">
             <div class="flex flex-wrap items-center">
                 <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
                     <div
-                        class="flex min-h-[480px] items-center rounded-e-lg bg-[#365a80] p-6 text-center text-gray-300 lg:pl-12 lg:text-left"
+                        class="flex min-h-[480px] items-center rounded-lg md:rounded-e-lg bg-[#365a80] p-6 md:text-center text-gray-300 lg:pl-12 lg:text-left"
                     >
                         <div class="lg:pr-12">
                             <div
-                                class="relative mb-5 flex py-5 items-center select-none text-4xl"
+                                class="relative mb-5 flex py-5 items-center select-none text-2xl md:text-4xl"
                             >
                                 <div class="flex-grow border-t"></div>
                                 <span class="flex-shrink mx-4">Valores</span>
@@ -107,13 +108,14 @@
                     </div>
                 </div>
                 <div
-                    class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 relative z-10 right-12"
+                    v-show="window.innerWidth > 1024"
+                    class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 relative z-10 md:right-12"
                 >
                     <div class="flex lg:py-12">
                         <img
                             draggable="false"
                             src="https://picsum.photos/1000/1000"
-                            class="w-7/12 rounded-lg shadow-lg lg:mr-16 z-[10]"
+                            class="md:w-7/12 rounded-lg shadow-lg lg:mr-16 z-[10]"
                             alt="image"
                         />
                     </div>
@@ -123,3 +125,20 @@
         <!-- Section: Design Block -->
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            window: {
+                innerWidth: 0,
+            },
+        };
+    },
+    mounted() {
+        this.window.innerWidth = window.innerWidth;
+        window.addEventListener("resize", () => {
+            this.window.innerWidth = window.innerWidth;
+        });
+    },
+};
+</script>

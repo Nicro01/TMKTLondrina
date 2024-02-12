@@ -108,11 +108,9 @@ defineComponent({
         Ripple,
         Collapse,
     },
-    setup() {
-        let isOpen = ref(false);
-        return { isOpen };
-    },
 });
+
+let isOpen = ref(false);
 
 onMounted(() => {
     initTE({ Ripple, Collapse });

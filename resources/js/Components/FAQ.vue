@@ -2,13 +2,13 @@
     <!-- Container for demo purpose -->
     <div class="container my-12 mx-auto md:px-6">
         <!-- Section: Design Block -->
-        <section class="mb-32">
+        <section class="mb-12 md:mb-32">
             <div
-                class="relative flex py-5 mb-16 mx-[20%] items-center text-4xl select-none"
+                class="relative flex py-5 mb-16 md:mx-[20%] items-center text-4xl select-none"
             >
                 <div class="flex-grow border-t border-gray-600"></div>
                 <span
-                    class="flex-shrink mx-4 text-3xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
+                    class="flex-shrink mx-4 text-2xl font-extrabold text-[#213557] md:text-4xl text-center sm:text-start"
                     >Perguntas Frequentes</span
                 >
                 <div class="flex-grow border-t border-gray-600"></div>
