@@ -33,11 +33,18 @@ export default {
 };
 </script>
 <template>
-    <div class="container mx-auto md:px-6">
+    <div class="container mx-auto md:px-6 max-w-7xl">
         <section class="mb-32 text-center">
-            <h2 class="mb-16 text-3xl font-bold text-[#213557]">
-                Nossos Serviços
-            </h2>
+            <div
+                class="relative flex py-5 mb-16 mx-[20%] items-center text-4xl select-none"
+            >
+                <div class="flex-grow border-t border-gray-600"></div>
+                <span
+                    class="flex-shrink mx-4 text-3xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
+                    >Nossos Serviços</span
+                >
+                <div class="flex-grow border-t border-gray-600"></div>
+            </div>
 
             <div class="grid sm:grid-cols-3 gap-10 sm:gap-0">
                 <div

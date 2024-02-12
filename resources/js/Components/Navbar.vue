@@ -78,6 +78,8 @@
                 <li>
                     <Link
                         href="/login"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
                         class="button bg-gradient-to-r from-[#213557] to-[#336090] py-2 px-4 rounded-3xl text-white"
                         >Login</Link
                     >
@@ -88,8 +90,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { defineComponent, ref } from "vue";
 import { Link } from "@inertiajs/vue3";
+import { Ripple, Collapse, initTE } from "tw-elements";
+import { onMounted } from "vue";
 
 defineProps({
     canLogin: Boolean,
@@ -98,5 +102,19 @@ defineProps({
     phpVersion: String,
 });
 
-let isOpen = ref(false);
+defineComponent({
+    components: {
+        Link,
+        Ripple,
+        Collapse,
+    },
+    setup() {
+        let isOpen = ref(false);
+        return { isOpen };
+    },
+});
+
+onMounted(() => {
+    initTE({ Ripple, Collapse });
+});
 </script>

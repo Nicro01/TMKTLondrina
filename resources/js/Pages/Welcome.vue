@@ -8,6 +8,7 @@ import Services from "@/Components/Services.vue";
 import Footer from "@/Components/Footer.vue";
 import FAQ from "@/Components/FAQ.vue";
 import OurValues from "@/Components/OurValues.vue";
+import NossaEssencia from "@/Components/TMKT Components/NossaEssencia.vue";
 
 import { Ripple, Collapse, initTE } from "tw-elements";
 
@@ -30,6 +31,7 @@ export default {
         Services,
         OurValues,
         OurValues,
+        NossaEssencia,
     },
     mounted() {
         initTE({ Ripple, Collapse });
@@ -137,20 +139,26 @@ body {
 
     <section class="sm:pt-24 pb-12 select-none bg-[#f6f8f9]" id="sobre-nos">
         <div
-            class="flex flex-col sm:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:gap-10 pt-12 sm:items-center items-start"
+            class="flex flex-col md:mb-24 sm:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:gap-10 pt-12 sm:items-center items-start"
         >
             <img
-                src="../../img/Vetores/Atendente.svg"
+                src="../../img/Atendente.jpg"
                 width="500"
                 alt=""
                 draggable="false"
+                class="rounded-lg shadow-lg"
             />
             <div class="flex flex-col">
-                <h2
-                    class="text-3xl font-extrabold text-[#213557] sm:text-4xl mb-3 text-center sm:text-start"
+                <div
+                    class="relative flex py-5 items-center text-4xl select-none"
                 >
-                    O que é a TMKT Londrina?
-                </h2>
+                    <div class="flex-grow border-t border-gray-600"></div>
+                    <span
+                        class="flex-shrink mx-4 text-3xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
+                        >O que é a TMKT Londrina?</span
+                    >
+                    <div class="flex-grow border-t border-gray-600"></div>
+                </div>
                 <p
                     class="sm:mt-4 sm:text-lg text-base leading-6 text-gray-500 text-center sm:text-start"
                 >
@@ -172,114 +180,16 @@ body {
         </div>
     </section>
 
-    <OurValues />
+    <Services />
+
+    <NossaEssencia />
 
     <section
         class="flex flex-col mx-auto px-4 sm:px-6 lg:px-8 gap-10 py-12 select-none bg-[#f6f8f9]"
     >
-        <hr
-            class="mb-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"
-        />
-        <div class="sm:mx-80">
-            <h2
-                class="text-3xl text-center font-extrabold text-[#213557] sm:text-4xl mb-3"
-            >
-                Nossa Essência
-            </h2>
-            <p
-                class="mt-8 sm:text-lg text-base text-center leading-6 text-gray-500"
-            >
-                Com experiência em treinamento e desenvolvimento na área
-                comercial, sua fundadora Rosilene Estevam, já atuava nos Estados
-                do Paraná, Santa Catarina e interior de São Paulo, destacando-se
-                pelo respeito e valorização do colaborador para oferecer as
-                melhores práticas em atendimento
-            </p>
-        </div>
-        <div class="grid-cols-1 sm:grid md:grid-cols-3 sm:mx-32 mx-10">
-            <div
-                class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0"
-            >
-                <a>
-                    <img
-                        class="rounded-t-lg max-w-[70%] p-14 mx-auto"
-                        draggable="false"
-                        src="../../img/Essencia/mission.png"
-                        alt="Hollywood Sign on The Hill"
-                    />
-                </a>
-                <div class="p-6 text-center">
-                    <h5
-                        class="mb-2 font-semibold text-xl leading-tight text-neutral-800 dark:text-neutral-50"
-                    >
-                        Missão
-                    </h5>
-                    <p
-                        class="mb-4 text-base text-neutral-600 dark:text-neutral-200"
-                    >
-                        Diálogo e pessoas movem o nosso negócio, por isso
-                        oferecemos soluções em atendimento de telemarketing para
-                        empresas.
-                    </p>
-                </div>
-            </div>
-            <div
-                class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0"
-            >
-                <img
-                    class="rounded-t-lg max-w-[70%] p-14 mx-auto"
-                    draggable="false"
-                    src="../../img/Essencia/vision.png"
-                    alt="Palm Springs Road"
-                />
-
-                <div class="p-6 text-center">
-                    <h5
-                        class="mb-2 text-xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50"
-                    >
-                        Visão
-                    </h5>
-                    <p
-                        class="mb-4 text-base text-neutral-600 dark:text-neutral-200"
-                    >
-                        Destacar-nos no mercado com atendimento de telemarketing
-                        humanizado, simplificado e centrado nas pessoas, atuando
-                        de forma proativa e reativa.
-                    </p>
-                </div>
-            </div>
-            <div
-                class="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0"
-            >
-                <img
-                    class="rounded-t-lg max-w-[70%] p-14 mx-auto"
-                    draggable="false"
-                    src="../../img/Essencia/value.png"
-                    alt="Skyscrapers"
-                />
-
-                <div class="p-6 text-center">
-                    <h5
-                        class="mb-2 text-xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50"
-                    >
-                        Valores
-                    </h5>
-                    <p
-                        class="mb-4 text-base text-neutral-600 dark:text-neutral-200"
-                    >
-                        Compromisso com metas e reconhecimento, oferecendo
-                        soluções éticas e inclusivas para o crescimento de
-                        todos.
-                    </p>
-                </div>
-            </div>
-        </div>
-
         <OurClient />
 
-        <div class="flex justify-center">
-            <Services />
-        </div>
+        <OurValues />
 
         <FAQ />
     </section>

@@ -3,11 +3,17 @@
         class="pb-24 select-none bg-[#f6f8f9] container mx-auto my-24"
         id="sobre-nos"
     >
-        <h2
-            class="text-3xl text-center font-extrabold text-[#213557] sm:text-4xl sm:mb-10"
+        <div
+            class="relative flex py-5 mb-16 mx-[20%] items-center text-4xl select-none"
         >
-            Nossos Valores
-        </h2>
+            <div class="flex-grow border-t border-gray-600"></div>
+            <span
+                class="flex-shrink mx-4 text-3xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
+                >Nossos Valores</span
+            >
+            <div class="flex-grow border-t border-gray-600"></div>
+        </div>
+
         <div
             class="grid sm:grid-cols-5 sm:max-w-7xl h-[500px] max-h-[500px] min-h-[500px] mx-auto px-4 sm:px-6 lg:px-8 gap-10 sm:pt-12 items-center justify-center"
         >

@@ -3,16 +3,23 @@
     <div class="container my-12 mx-auto md:px-6">
         <!-- Section: Design Block -->
         <section class="mb-32">
-            <h2 class="mb-16 text-center text-3xl font-bold">
-                Perguntas Frequentes
-            </h2>
+            <div
+                class="relative flex py-5 mb-16 mx-[20%] items-center text-4xl select-none"
+            >
+                <div class="flex-grow border-t border-gray-600"></div>
+                <span
+                    class="flex-shrink mx-4 text-3xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
+                    >Perguntas Frequentes</span
+                >
+                <div class="flex-grow border-t border-gray-600"></div>
+            </div>
 
             <div class="grid gap-6 lg:grid-cols-3">
                 <div class="mb-6 md:mb-8 lg:mb-12">
                     <p class="mb-4 font-bold">
                         Anim pariatur cliche reprehenderit?
                     </p>
-                    <p class="text-neutral-500 dark:text-neutral-300">
+                    <p class="text-neutral-500">
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Sunt autem numquam dolore molestias aperiam culpa
                         alias veritatis architecto eos, molestiae vitae ex
@@ -25,7 +32,7 @@
                     <p class="mb-4 font-bold">
                         Non cupidatat skateboard dolor brunch?
                     </p>
-                    <p class="text-neutral-500 dark:text-neutral-300">
+                    <p class="text-neutral-500">
                         Distinctio corporis, iure facere ducimus quos
                         consectetur ipsa ut magnam autem doloremque ex! Id,
                         sequi. Voluptatum magnam sed fugit iusto minus et
@@ -41,7 +48,7 @@
                         Praesentium voluptatibus temporibus consequatur non
                         aspernatur?
                     </p>
-                    <p class="text-neutral-500 dark:text-neutral-300">
+                    <p class="text-neutral-500">
                         Minima sunt at nulla tenetur, numquam unde quod modi
                         magnam ab deserunt ipsam sint aliquid dolores libero
                         repellendus cupiditate mollitia quidem dolorem.
@@ -52,7 +59,7 @@
                     <p class="mb-4 font-bold">
                         Voluptatum magnam sed fugit iusto minus et suscipit?
                     </p>
-                    <p class="text-neutral-500 dark:text-neutral-300">
+                    <p class="text-neutral-500">
                         Laudantium perferendis, est alias iure ut veniam
                         suscipit dolorem fugit. Et ipsam corporis earum ea ut
                         quae cum non iusto blanditiis ipsum dolor eius
@@ -62,7 +69,7 @@
 
                 <div class="mb-6 md:mb-8 lg:mb-12">
                     <p class="mb-4 font-bold">Minima sunt at nulla tenetur?</p>
-                    <p class="text-neutral-500 dark:text-neutral-300">
+                    <p class="text-neutral-500">
                         Numquam unde quod modi magnam ab deserunt ipsam sint
                         aliquid dolores libero repellendus cupiditate mollitia
                         quidem dolorem odit
@@ -73,7 +80,7 @@
                     <p class="mb-4 font-bold">
                         Distinctio corporis, iure facere ducimus?
                     </p>
-                    <p class="text-neutral-500 dark:text-neutral-300">
+                    <p class="text-neutral-500">
                         Eaque eos corrupti debitis tenetur repellat, beatae
                         quibusdam incidunt, fuga non iste dignissimos officiis
                         nam officia obcaecati commodi ratione qui nesciunt.

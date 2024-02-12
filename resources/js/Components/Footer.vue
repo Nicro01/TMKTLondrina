@@ -190,10 +190,8 @@
         <!--Copyright section-->
         <div class="bg-[#0D2235] p-6 text-center">
             <span>© 2024 Copyright: </span>
-            <a
-                class="font-semibold text-white"
-                href="https://github.com/Nicro01"
-                >Nicro01</a
+            <a class="font-semibold text-white" href="https://webgenie.com.br"
+                >WebGenie</a
             >
         </div>
     </footer>
