@@ -36,6 +36,7 @@ export default {
     <div class="container mx-auto md:px-6 max-w-7xl">
         <section class="mb-32 text-center">
             <div
+                data-aos="fade-up"
                 class="relative flex py-5 mb-16 mx-[10%] md:mx-[20%] items-center text-4xl select-none"
             >
                 <div class="flex-grow border-t border-gray-600"></div>
@@ -46,9 +47,10 @@ export default {
                 <div class="flex-grow border-t border-gray-600"></div>
             </div>
 
-            <div class="grid sm:grid-cols-3 gap-10 sm:gap-0">
+            <div class="grid max-xl:grid-cols-1 grid-cols-3 gap-10">
                 <div
-                    class="max-w-sm mx-auto bg-white shadow-lg grow rounded-lg overflow-hidden"
+                    data-aos="fade-down"
+                    class="col-span-1 bg-white shadow-lg grow rounded-lg overflow-hidden"
                 >
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Prospecção</div>
@@ -148,7 +150,8 @@ export default {
                 </div>
 
                 <div
-                    class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
+                    data-aos="fade-down"
+                    class="col-span-1 bg-white shadow-lg rounded-lg overflow-hidden"
                 >
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">
@@ -204,7 +207,8 @@ export default {
                 </div>
 
                 <div
-                    class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
+                    data-aos="fade-down"
+                    class="col-span-1 bg-white shadow-lg rounded-lg overflow-hidden"
                 >
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">

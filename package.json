@@ -20,9 +20,11 @@
     },
     "dependencies": {
         "@egjs/vue3-flicking": "^4.11.1",
+        "aos": "^2.3.4",
         "nprogress": "^0.2.0",
         "tw-elements": "^1.1.0",
         "vue-carousel": "^0.18.0",
+        "vue-scrollto": "^2.20.0",
         "vue3-carousel": "^0.3.1"
     }
 }

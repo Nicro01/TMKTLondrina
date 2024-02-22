@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="">
         <div
             class="relative flex py-5 mb-16 md:mx-[20%] items-center text-4xl select-none"
         >
@@ -12,26 +12,28 @@
         </div>
 
         <!-- Section: Design Block -->
-        <section class="mb-12 md:mb-32">
+        <section class="mb-12 md:mb-32 max-xl:max-w-3xl mx-auto">
             <div class="flex flex-wrap">
                 <div
                     v-show="window.innerWidth > 1024"
-                    class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 relative z-10 md:left-60"
+                    class="mb-12 w-full xl:shrink-0 xl:grow-0 xl:basis-auto lg:mb-0 lg:w-5/12 relative z-10 xl:left-60"
                 >
                     <div class="flex lg:py-12">
                         <img
                             draggable="false"
                             src="https://picsum.photos/1000/1000"
-                            class="md:w-7/12 rounded-lg shadow-lg lg:ml-16 z-[10]"
+                            class="xl:w-7/12 rounded-lg shadow-lg xl:ml-16 z-[10]"
                             alt="image"
                         />
                     </div>
                 </div>
-                <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                <div
+                    class="max-xl:w-full xl:shrink-0 xl:grow-0 xl:basis-auto xl:w-7/12"
+                >
                     <div
-                        class="flex min-h-[480px] items-center rounded-lg md:rounded-s-lg bg-[#365a80] p-6 md:text-center text-gray-300 lg:pl-12 lg:text-left"
+                        class="flex min-h-[480px] max-xl:justify-center items-center max-xl:rounded-lg rounded-s-lg md:rounded-s-lg bg-[#365a80] p-6 md:text-center text-gray-300 xl:pl-12 lg:text-left"
                     >
-                        <div class="lg:pl-12">
+                        <div class="xl:pl-12">
                             <div
                                 class="relative mb-5 flex py-5 items-center select-none text-2xl md:text-4xl"
                             >
@@ -68,13 +70,15 @@
                 </div>
             </div>
         </section>
-        <section class="md:mb-32">
+        <section class="md:mb-32 max-xl:max-w-3xl mx-auto">
             <div class="flex flex-wrap items-center">
-                <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                <div
+                    class="w-full xl:shrink-0 xl:grow-0 xl:basis-auto xl:w-7/12"
+                >
                     <div
-                        class="flex min-h-[480px] items-center rounded-lg md:rounded-e-lg bg-[#365a80] p-6 md:text-center text-gray-300 lg:pl-12 lg:text-left"
+                        class="flex min-h-[480px] max-xl:w-full max-xl:justify-center items-center max-xl:rounded-lg xl:rounded-e-lg bg-[#365a80] p-6 md:text-center text-gray-300 xl:pl-12 lg:text-start"
                     >
-                        <div class="lg:pr-12">
+                        <div class="xl:pr-12">
                             <div
                                 class="relative mb-5 flex py-5 items-center select-none text-2xl md:text-4xl"
                             >

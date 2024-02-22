@@ -9,6 +9,7 @@ import Footer from "@/Components/Footer.vue";
 import FAQ from "@/Components/FAQ.vue";
 import OurValues from "@/Components/OurValues.vue";
 import NossaEssencia from "@/Components/TMKT Components/NossaEssencia.vue";
+import BrandsScroll from "@/Components/TMKT Components/BrandsScroll.vue";
 
 import { Ripple, Collapse, initTE } from "tw-elements";
 
@@ -30,8 +31,9 @@ export default {
         FAQ,
         Services,
         OurValues,
-        OurValues,
+        BrandsScroll,
         NossaEssencia,
+        BrandsScroll,
     },
     mounted() {
         initTE({ Ripple, Collapse });
@@ -51,6 +53,7 @@ body {
         <Navbar />
         <div
             class="sm:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:flex sm:flex-row flex-col gap-10 sm:pt-32 pt-14"
+            data-aos="zoom-in"
         >
             <div class="max-w-3xl mx-auto flex flex-col gap-10">
                 <h2
@@ -134,33 +137,46 @@ body {
             <CarouselHome />
         </div>
 
+        <div class="w-full flex flex-col items-center justify-center mt-20">
+            <p class="text-white font-menium mb-2">Conhecer a TMKT Londrina</p>
+            <lord-icon
+                v-scroll-to="'#sobre-nos'"
+                src="https://cdn.lordicon.com/rmkahxvq.json"
+                colors="primary:#ffffff"
+                trigger="hover"
+                class="transition-all duration-300 ease-out w-10 h-10 cursor-pointer hover:scale-[1.08]"
+            >
+            </lord-icon>
+        </div>
+
         <Waves />
     </section>
 
     <section class="sm:pt-24 pb-12 select-none bg-[#f6f8f9]" id="sobre-nos">
         <div
-            class="flex flex-col md:mb-24 sm:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:gap-10 pt-12 sm:items-center items-start"
+            class="flex max-xl:flex-wrap-reverse md:mb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:gap-10 pt-12 sm:items-center items-start"
         >
             <img
                 src="../../img/Atendente.jpg"
                 width="500"
                 alt=""
                 draggable="false"
-                class="rounded-lg shadow-lg"
+                class="rounded-lg max-xl:mx-auto shadow-lg max-sm:mt-10"
+                data-aos="fade-up"
             />
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-down">
                 <div
                     class="relative flex py-5 items-center text-4xl select-none"
                 >
                     <div class="flex-grow border-t border-gray-600"></div>
                     <span
-                        class="flex-shrink mx-4 text-3xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
+                        class="flex-shrink mx-4 text-3xl max-sm:text-xl font-extrabold text-[#213557] sm:text-4xl text-center sm:text-start"
                         >O que é a TMKT Londrina?</span
                     >
                     <div class="flex-grow border-t border-gray-600"></div>
                 </div>
                 <p
-                    class="sm:mt-4 sm:text-lg text-base leading-6 text-gray-500 text-center sm:text-start"
+                    class="sm:mt-4 max-sm:text-start sm:text-lg lg:text-base text-base leading-6 text-gray-500 text-center sm:text-start"
                 >
                     A TMKT Londrina é uma empresa que atua no ramo de
                     telemarketing ativo, oferecendo soluções para grandes
@@ -180,14 +196,14 @@ body {
         </div>
     </section>
 
-    <Services />
+    <section class="w-full"><Services /></section>
 
     <NossaEssencia />
 
     <section
         class="flex flex-col mx-auto px-4 sm:px-6 lg:px-8 gap-10 py-12 select-none bg-[#f6f8f9]"
     >
-        <OurClient />
+        <BrandsScroll />
 
         <OurValues />
 

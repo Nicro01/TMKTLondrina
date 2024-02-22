@@ -2,6 +2,7 @@
     <div class="container mt-12 mx-auto bg-transparent">
         <section class="text-center">
             <div
+                data-aos="fade-up"
                 class="relative flex py-5 md:mb-16 md:mx-[20%] items-center text-4xl select-none"
             >
                 <div class="flex-grow border-t border-gray-600"></div>

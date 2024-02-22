@@ -8,6 +8,7 @@
             >
                 <div class="flex-grow border-t border-gray-600"></div>
                 <span
+                    data-aos="fade-up"
                     class="flex-shrink mx-4 text-2xl font-extrabold text-[#213557] md:text-4xl text-center sm:text-start"
                     >Perguntas Frequentes</span
                 >
@@ -15,7 +16,7 @@
             </div>
 
             <div class="grid gap-6 lg:grid-cols-3">
-                <div class="mb-6 md:mb-8 lg:mb-12">
+                <div class="mb-6 md:mb-8 lg:mb-12" data-aos="zoom-in">
                     <p class="mb-4 font-bold">
                         Anim pariatur cliche reprehenderit?
                     </p>
@@ -28,7 +29,7 @@
                     </p>
                 </div>
 
-                <div class="mb-6 md:mb-8 lg:mb-12">
+                <div class="mb-6 md:mb-8 lg:mb-12" data-aos="zoom-in">
                     <p class="mb-4 font-bold">
                         Non cupidatat skateboard dolor brunch?
                     </p>
@@ -43,7 +44,7 @@
                     </p>
                 </div>
 
-                <div class="mb-6 md:mb-8 lg:mb-12">
+                <div class="mb-6 md:mb-8 lg:mb-12" data-aos="zoom-in">
                     <p class="mb-4 font-bold">
                         Praesentium voluptatibus temporibus consequatur non
                         aspernatur?
@@ -55,7 +56,7 @@
                     </p>
                 </div>
 
-                <div class="mb-6 md:mb-8 lg:mb-12">
+                <div class="mb-6 md:mb-8 lg:mb-12" data-aos="zoom-in">
                     <p class="mb-4 font-bold">
                         Voluptatum magnam sed fugit iusto minus et suscipit?
                     </p>
@@ -67,7 +68,7 @@
                     </p>
                 </div>
 
-                <div class="mb-6 md:mb-8 lg:mb-12">
+                <div class="mb-6 md:mb-8 lg:mb-12" data-aos="zoom-in">
                     <p class="mb-4 font-bold">Minima sunt at nulla tenetur?</p>
                     <p class="text-neutral-500">
                         Numquam unde quod modi magnam ab deserunt ipsam sint
@@ -76,7 +77,7 @@
                     </p>
                 </div>
 
-                <div class="mb-6 md:mb-8 lg:mb-12">
+                <div class="mb-6 md:mb-8 lg:mb-12" data-aos="zoom-in">
                     <p class="mb-4 font-bold">
                         Distinctio corporis, iure facere ducimus?
                     </p>

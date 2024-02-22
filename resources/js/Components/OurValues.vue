@@ -4,6 +4,7 @@
         id="sobre-nos"
     >
         <div
+            data-aos="fade-up"
             class="relative flex py-5 md:mb-16 md:mx-[20%] items-center text-4xl select-none"
         >
             <div class="flex-grow border-t border-gray-600"></div>
@@ -23,11 +24,13 @@
                 v-show="valores.indexOf(valor) == currentSlide"
             >
                 <h2
+                    data-aos="fade-down"
                     class="text-xl font-extrabold text-[#213557] sm:text-4xl mb-3 text-center sm:text-start"
                 >
                     {{ valor.title }}
                 </h2>
                 <p
+                    data-aos="fade-up"
                     class="mt-4 sm:text-lg text-base leading-6 text-gray-500 text-center sm:text-start"
                 >
                     {{ valor.description }}
@@ -39,6 +42,7 @@
                 data-te-carousel-init
                 data-te-ride="carousel"
                 data-te-interval="false"
+                data-aos="fade-up"
             >
                 <!--Carousel indicators-->
                 <div
