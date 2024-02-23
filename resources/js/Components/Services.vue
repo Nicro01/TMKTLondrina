@@ -83,9 +83,10 @@ export default {
                         <div class="block rounded-lg bg-white p-6">
                             <b class="text-center text-lg">Estabelecer</b>
                             <p>
-                                Identificar e contatar potenciais clientes que
-                                estejam alinhados com o perfil de negócio das
-                                empresas parceiras.
+                                concentramos-nos em estabelecer conexões sólidas
+                                com os leads, compreendendo suas necessidades e
+                                criando um vínculo inicial que impulsione o
+                                processo de vendas.
                             </p>
                         </div>
                     </div>
@@ -97,9 +98,12 @@ export default {
                         <div class="block rounded-lg bg-white p-6">
                             <b class="text-center text-lg">Melhorar</b>
                             <p>
-                                Identificar e contatar potenciais clientes que
-                                estejam alinhados com o perfil de negócio das
-                                empresas parceiras.
+                                Na busca pela excelência, buscamos
+                                constantemente aprimorar nossas estratégias de
+                                telemarketing ativo. Isso inclui refinamento de
+                                abordagens, escuta ativa e adaptação contínua
+                                para garantir resultados ainda mais eficazes e
+                                satisfatórios.
                             </p>
                         </div>
                     </div>
@@ -140,9 +144,12 @@ export default {
                         <div class="block rounded-lg bg-white p-6">
                             <b class="text-center text-lg">Atender</b>
                             <p>
-                                Identificar e contatar potenciais clientes que
-                                estejam alinhados com o perfil de negócio das
-                                empresas parceiras.
+                                No processo de telemarketing receptivo, nosso
+                                foco primordial é atender às necessidades dos
+                                clientes de forma ágil e precisa. Estamos
+                                comprometidos em oferecer assistência
+                                personalizada, respondendo prontamente às
+                                consultas e fornecendo soluções eficientes.
                             </p>
                         </div>
                     </div>
@@ -154,9 +161,13 @@ export default {
                         <div class="block rounded-lg bg-white p-6">
                             <b class="text-center text-lg">Reduzir</b>
                             <p>
-                                Identificar e contatar potenciais clientes que
-                                estejam alinhados com o perfil de negócio das
-                                empresas parceiras.
+                                Buscamos constantemente reduzir o tempo de
+                                espera do cliente, tornando o processo de
+                                atendimento mais eficiente e satisfatório.
+                                Através de métodos otimizados e uma equipe
+                                dedicada, trabalhamos para diminuir as filas de
+                                espera, garantindo uma experiência positiva para
+                                cada contato.
                             </p>
                         </div>
                     </div>

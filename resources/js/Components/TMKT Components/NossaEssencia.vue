@@ -16,13 +16,13 @@
             <div class="flex flex-wrap">
                 <div
                     v-show="window.innerWidth > 1024"
-                    class="mb-12 w-full xl:shrink-0 xl:grow-0 xl:basis-auto lg:mb-0 lg:w-5/12 relative z-10 xl:left-60"
+                    class="mb-12 w-full xl:shrink-0 xl:grow-0 xl:basis-auto lg:mb-0 lg:w-5/12 relative z-10 xl:left-20"
                 >
                     <div class="flex lg:py-12">
                         <img
                             draggable="false"
-                            src="https://picsum.photos/1000/1000"
-                            class="xl:w-7/12 rounded-lg shadow-lg xl:ml-16 z-[10]"
+                            src="/img/Valores/33.jpg"
+                            class="xl:w-full rounded-lg shadow-lg z-[10]"
                             alt="image"
                         />
                     </div>
@@ -118,8 +118,8 @@
                     <div class="flex lg:py-12">
                         <img
                             draggable="false"
-                            src="https://picsum.photos/1000/1000"
-                            class="md:w-7/12 rounded-lg shadow-lg lg:mr-16 z-[10]"
+                            src="/img/Valores/1823.jpg"
+                            class="md:w-full rounded-lg shadow-lg lg:mr-16 z-[10]"
                             alt="image"
                         />
                     </div>

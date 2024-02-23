@@ -110,7 +110,7 @@
                     >
                         <img
                             :src="slideImages[0]"
-                            class="block w-full max-w-3xl"
+                            class="block w-full max-w-xl"
                             alt="..."
                         />
                     </div>
@@ -122,7 +122,7 @@
                     >
                         <img
                             :src="slideImages[1]"
-                            class="block w-full max-w-3xl"
+                            class="block w-full max-w-xl"
                             alt="..."
                         />
                     </div>
@@ -134,7 +134,7 @@
                     >
                         <img
                             :src="slideImages[2]"
-                            class="block w-full max-w-3xl"
+                            class="block w-full max-w-xl"
                             alt="..."
                         />
                     </div>
@@ -145,7 +145,7 @@
                     >
                         <img
                             :src="slideImages[3]"
-                            class="block w-full max-w-3xl"
+                            class="block w-full max-w-xl"
                             alt="..."
                         />
                     </div>
@@ -227,10 +227,10 @@ export default {
         return {
             currentSlide: 0,
             slideImages: [
-                "/img/Valores/Comprometimento.svg",
-                "/img/Valores/Etica.svg",
-                "/img/Valores/Inclusao.svg",
-                "/img/Valores/Reconhecimento.svg",
+                "/img/Valores/Comprometimento.jpg",
+                "/img/Valores/Etica.jpg",
+                "/img/Valores/Inclusao.jpg",
+                "/img/Valores/Reconhecimento.jpg",
             ],
             valores: [
                 {
