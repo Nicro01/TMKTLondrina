@@ -10,10 +10,10 @@
         >
         <div class="flex-grow border-t border-gray-600"></div>
     </div>
-    <div class="scroll max-w-6xl mx-auto" style="--time: 40s">
+    <div class="scroll max-w-6xl mx-auto" style="--time: 10s">
         <div class="mx-auto mb-12 lg:mb-0">
             <div class="images">
-                <span v-for="i in 2" :key="i">
+                <span v-for="i in 3" :key="i">
                     <a href="https://www.instagram.com/carasbrasil/">
                         <img
                             src="https://images.trustinnews.pt/uploads/sites/2/2019/02/caras-2-1-286x160.png"
@@ -64,13 +64,19 @@
     animation: scroll var(--time) linear infinite;
 }
 
+@media screen and (max-width: 768px) {
+    .scroll .images {
+        animation: scroll 10s linear infinite;
+    }
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-58%);
     }
 }
 
