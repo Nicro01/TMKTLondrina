@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div
-                    class="max-xl:w-full xl:shrink-0 xl:grow-0 xl:basis-auto xl:w-7/12"
+                    class="max-xl:w-full p-10 md:p-0 xl:shrink-0 xl:grow-0 xl:basis-auto xl:w-7/12"
                 >
                     <div
                         class="flex min-h-[480px] max-xl:justify-center items-center max-xl:rounded-lg rounded-s-lg md:rounded-s-lg bg-[#365a80] p-6 md:text-center text-gray-300 xl:pl-12 lg:text-left"
@@ -73,7 +73,7 @@
         <section class="md:mb-32 max-xl:max-w-3xl mx-auto">
             <div class="flex flex-wrap items-center">
                 <div
-                    class="w-full xl:shrink-0 xl:grow-0 xl:basis-auto xl:w-7/12"
+                    class="w-full p-10 md:p-0 xl:shrink-0 xl:grow-0 xl:basis-auto xl:w-7/12"
                 >
                     <div
                         class="flex min-h-[480px] max-xl:w-full max-xl:justify-center items-center max-xl:rounded-lg xl:rounded-e-lg bg-[#365a80] p-6 md:text-center text-gray-300 xl:pl-12 lg:text-start"

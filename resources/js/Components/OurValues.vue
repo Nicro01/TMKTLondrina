@@ -1,6 +1,6 @@
 <template>
     <section
-        class="pb-12 md:pb-24 select-none bg-[#f6f8f9] container mx-auto my-24"
+        class="pb-12 md:pb-24 select-none bg-[#f6f8f9] container mx-auto md:my-24"
         id="sobre-nos"
     >
         <div

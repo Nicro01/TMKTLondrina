@@ -10,8 +10,8 @@
         >
         <div class="flex-grow border-t border-gray-600"></div>
     </div>
-    <div class="scroll max-w-6xl mx-auto" style="--time: 10s">
-        <div class="mx-auto mb-12 lg:mb-0">
+    <div class="scroll max-w-6xl mx-auto py-10" style="--time: 10s">
+        <div class="mx-auto md:mb-12 lg:mb-0">
             <div class="images">
                 <span v-for="i in 3" :key="i">
                     <a href="https://www.instagram.com/carasbrasil/">
