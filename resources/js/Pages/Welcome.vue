@@ -179,7 +179,7 @@ body {
                     class="sm:mt-4 max-sm:text-start sm:text-lg lg:text-base text-base leading-6 text-gray-500 text-center sm:text-start"
                 >
                     A TMKT Londrina é uma empresa que atua no ramo de
-                    telemarketing ativo, oferecendo soluções para grandes
+                    Telemarketing ativo, oferecendo soluções para grandes
                     empresas do setor editorial de revistas e plataformas
                     digitais. Fundada em 2004, a TMKT Londrina tem se dedicado a
                     fornecer serviços de telemarketing de alta qualidade,

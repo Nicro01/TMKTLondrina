@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description"
+        content="TMKT Londrina: Especializada em Telemarketing ativo para empresas do setor editorial e digital desde 2004, oferecendo soluções de alta qualidade e suporte personalizado para maximizar o alcance e impacto de seus clientes.">
+    <meta name="keywords"
+        content="telemarketing, vendas, revistas, londrina, telecomunicação, Telemarketing ativo, TMKT Londrina, empresas editoriais, plataformas digitais, serviços de telemarketing, suporte empresarial, marketing e vendas, soluções de telemarketing, maximizar alcance, tmkt, tmkt londrina, tmktlondrina, TMKT, TMKT Londrina" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title inertia>{{ config('app.name', 'Laravel') }}</title>
+    <title>TMKT Londrina: Soluções de Telemarketing Ativo para Empresas Editoriais e Digitais</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
