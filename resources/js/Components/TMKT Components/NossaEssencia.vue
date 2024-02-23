@@ -13,7 +13,7 @@
 
         <!-- Section: Design Block -->
         <section class="mb-12 md:mb-32 max-xl:max-w-3xl mx-auto">
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap items-center">
                 <div
                     v-show="window.innerWidth > 1024"
                     class="mb-12 w-full xl:shrink-0 xl:grow-0 xl:basis-auto lg:mb-0 lg:w-5/12 relative z-10 xl:left-20"
